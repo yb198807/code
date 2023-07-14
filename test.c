@@ -16,12 +16,7 @@
 // }
 int main()
 {
-    int arr[]={1,2,3,4,5};
-    int* p=arr;
-    int a;
-    for(a=0;a<5;a++)
-    {
-        printf("%d\n",*(p+a));
-    }
+    int a=1;
+    printf("%p\n",&a);
     return 0;
 }
