@@ -14,9 +14,13 @@
 //         }
 //     }
 // }
+void print(int a)
+{
+    printf("aaa\n");
+}
 int main()
 {
-    int a=1;
-    printf("%p\n",&a);
+    void(*pa)(int)=print;
+    pa(5);
     return 0;
 }
