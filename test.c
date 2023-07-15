@@ -14,13 +14,17 @@
 //         }
 //     }
 // }
-void print(int a)
-{
-    printf("aaa\n");
-}
 int main()
 {
-    void(*pa)(int)=print;
-    pa(5);
+    int s,n,i;
+    scanf("%d%d",&s,&n);
+    int sum=0;
+    int ret=0;
+    for(i=1;i<=s;i++)
+    {
+        ret=ret*10+n;
+        sum+=ret;
+    }
+    printf("%d\n",sum);
     return 0;
 }
